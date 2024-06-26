@@ -1,0 +1,29 @@
+
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .aboutContainers {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* HAMBURGER MENU */
+
+@media screen and (max-width: 1200px) {
+    #desktopNav {
+        display: none;
+    }
+    #hamburgerNav {
+        display: flex;
+    }
+    .scrollDown {
+        display: none;
+    }
+    .section {
+        position: static;
+    }
+}

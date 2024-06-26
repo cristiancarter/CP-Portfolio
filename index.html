@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristian Petrila | Full-stack Developer</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <nav id="desktopNav">
+        <div class="logo" onclick="location='./#'">CP</div>
+        <div>
+            <ul class="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburgerNav">
+        <div class="logo" onclick="location='./#'"">CP</div>
+      <div class=" hamburgerMenu">
+            <div class="hamburgerIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menuLinks">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="hero">
+        <div class="sectionContainer">
+            <div class="leftContent">
+                <img src="assets/cp.jpeg" alt="Headshot of Cristian Petrila in black and white">
+            </div>
+            <div class="card">
+                <div class="windowBtns">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="rightContent">
+                    <p>Hello world, my name is</p>
+                    <h1 class="title">Cristian Petrila, <br>I <span class="typewriter"></span>💻</h1>
+                    <p class="sectionParagraph">Full-stack developer transfering ideas into feasible code.</p>
+                </div>
+                <div class="btnContainer">
+                    <a class="primaryBtn inverted" href="https://github.com/cristiancarter"><img style="width: 30%;" src="assets/github.svg"
+                            alt="">Github logo</a>
+                    <a class="secondaryBtn" href="https://www.linkedin.com/in/cristian-petrila/"><img style="width: 30%;" src="assets/linkedin.svg" alt="LinkedIn logo">
+                        LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="scrollDown" onclick="location='./#about'">
+            <p>Next section</p>
+            <img class="arrow" src="assets/scrolldown.svg" alt="Arrow icon to indicate scrolling down">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="sectionContainer">
+            <div class="card">
+                <div class="windowBtns">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="rightContent">
+
+                    <h1 class="title">About me <span class="typingDots"></span></h1>
+                    <p class="sectionParagraph">👋 Hello! I'm Cristian, a passionate and dedicated Junior Front-End
+                        Developer with a keen eye for design and a
+                        love for coding. My journey into the world of web development started with a curiosity about how
+                        websites work
+                        and quickly grew into a full-fledged passion. I thrive on the challenge of turning complex
+                        problems into simple,
+                        beautiful, and intuitive interfaces.</p>
+                    <br>
+                    <p class="sectionParagraph secondayFont">Hobbies: Ice hockey, building LEGOs, old literature, gaming
+                    </p>
+                </div>
+                <div class="btnContainer" style="height: 3.6rem;">
+                    <a class="primaryBtn inverted" onclick="window.open('assets/placeholderResume.pdf')">Download CV</a>
+                </div>
+            </div>
+            <div class="techStack">
+                <div class="cardCentered">
+                    <h2 class="secondaryTitle">Tech Stack</h2>
+                    <div class="techStackContainer">
+                        <div class="languageContainer">
+                            <p class="subtitle">Web Languages</p>
+                            <div class="languageIcons">
+                                <img class="languageIcon" src="assets/html.svg" alt="HTML icon">
+                                <img class="languageIcon" src="assets/css.svg" alt="CSS icon">
+                            </div>
+                        </div>
+                        <div class="languageContainer">
+                            <p class="subtitle">Programming Languages</p>
+                            <div class="languageIcons">
+                                <img class="languageIcon" src="assets/js.svg" alt="JavaScript icon">
+                                <img class="languageIcon" src="assets/py.svg" alt="Python icon">
+                            </div>
+                        </div>
+                        <div class="languageContainer">
+                            <p class="subtitle">Technologies</p>
+                            <div class="languageIcons">
+                                <img class="languageIcon" src="assets/react.svg" alt="React icon">
+                                <img class="languageIcon" src="assets/tailwind.svg" alt="Tailwind icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scrollDown" onclick="location='./#projects'">
+            <p>Next section</p>
+            <img class="arrow" src="assets/scrolldown.svg" alt="Arrow icon to indicate scrolling down">
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <div class="projectsContainer">
+            <h1 class="title">Projects<span class="typingDots"></span></h1>
+            <div class="sectionContainer">
+                <div id="projectOne" class="projectCard">
+                    <img src="assets/hr.jpg" alt="Project image placeholder of a vectorized HR platform">
+                    <div class="projectInfo">
+                        <h2 class="subtitle">HR Dashboard</h2>
+                        <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
+                        <div class="projectsButtonsContainer">
+                            <button class="tertiaryBtn">View on github</button>
+                            <button class="fourthBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="projectOne" class="projectCard">
+                    <img src="assets/plane.jpg" alt="Vectorized image of a plane">
+                    <div class="projectInfo">
+                        <h2 class="subtitle">Project name</h2>
+                        <p>Placeholder for the second project which is still in works... Keep an eye on this.</p>
+                        <div class="projectsButtonsContainer">
+                            <button class="tertiaryBtn">View on github</button>
+                            <button class="fourthBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="projectOne" class="projectCard">
+                    <img src="assets/calculator.png" alt="Vectorized image of a calculator">
+                    <div class="projectInfo">
+                        <h2 class="subtitle">Project name</h2>
+                        <p>Placeholder for third project which is still in works... Keep an eye on this.</p>
+                        <div class="projectsButtonsContainer">
+                            <button class="tertiaryBtn">View on github</button>
+                            <button class="fourthBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="scrollDownMiddle" onclick="location='./#contact'">
+                <p>Next section</p>
+                <img class="arrow" src="assets/scrolldown.svg" alt="Arrow to indicate scrolling down">
+            </div>
+    </section>
+
+
+
+    <section id="contact">
+        <div class="sectionContainer">
+            <div class="cardWide">
+                <div class="windowBtns">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="rightContent">
+
+                    <h1 class="title">Contact me<span class="typingDots"></span> </h1>
+
+                    <hr class="divider">
+
+                    <div class="projectsButtonsContainer">
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                            async></script>
+                        <a class="tertiaryBtn" href=""
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cristianpetrila-e7ps/30min'});return false;">Schedule
+                            time with me</a>
+                        <!-- Calendly link widget end -->
+
+                        <a class="fourthBtn"
+                            href="mailto:cristianpetrila@outlook.com?subject=Let's work together!">cristianpetrila@outlook.com</a>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+
+    <footer>
+        <footer>
+            <nav>
+                <div class="navLinksContainer">
+                    <ul class="navLinks">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Cristian Petrila. All Rights Reserved.</p>
+        </footer>
+    </footer>
+
+</body>
+
+</html>
