@@ -4,6 +4,12 @@ function toggleMenu() {
     menu.classList.toggle("open")
     icon.classList.toggle("open")
 };
+function toggleMenu() {
+    const menu = document.querySelector(".mlResponsive");
+    const icon = document.querySelector(".hiResponsive");
+    menu.classList.toggle("open")
+    icon.classList.toggle("open")
+};
 
 document.addEventListener('DOMContentLoaded', function() {
     const typeWriter = new Typed(".typewriter", {
@@ -24,3 +30,27 @@ document.addEventListener('DOMContentLoaded', function() {
         backDelay: 2000,
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.getElementById("hamburgerNav");
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 130) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.getElementById("hamburgerNavResponsive");
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 130) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+});
+
+

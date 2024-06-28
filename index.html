@@ -9,15 +9,14 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script> 
+    <!-- ^^ Script for typewriter effect -->
 </head>
 
 <body>
+
+
+    <!-- Navigation bar -->
 
     <nav id="desktopNav">
         <div class="logo" onclick="location='./#'">CP</div>
@@ -30,6 +29,9 @@
         </div>
     </nav>
 
+
+    <!-- Responsive Navigation Bar -->
+
     <nav id="hamburgerNav">
         <div class="logo" onclick="location='./#'"">CP</div>
       <div class=" hamburgerMenu">
@@ -39,12 +41,33 @@
                 <span></span>
             </div>
             <div class="menuLinks">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a id="aboutNavBtn" href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a id="projectsNavBtn" href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a id="contactNavBtn" href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
+
         </div>
     </nav>
+
+    <nav id="hamburgerNavResponsive">
+        <div class="logo" onclick="location='./#'"">CP</div>
+      <div class=" hamburgerMenu">
+            <div class="hamburgerIcon hiResponsive" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menuLinks mlResponsive">
+                <li><a id="aboutNavBtn" href="#aboutResponsive" onclick="toggleMenu()">About</a></li>
+                <li><a id="projectsNavBtn" href="#projectsResponsive" onclick="toggleMenu()">Projects</a></li>
+                <li><a id="contactNavBtn" href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Hero section -->
 
 
     <section id="hero">
@@ -64,9 +87,10 @@
                     <p class="sectionParagraph">Full-stack developer transfering ideas into feasible code.</p>
                 </div>
                 <div class="btnContainer">
-                    <a class="primaryBtn inverted" href="https://github.com/cristiancarter"><img style="width: 30%;" src="assets/github.svg"
-                            alt="GitHub Logo" draggable="false">GitHub</a>
-                    <a class="secondaryBtn" href="https://www.linkedin.com/in/cristian-petrila/"><img style="width: 30%;" src="assets/linkedin.svg" alt="LinkedIn logo" draggable="false">
+                    <a class="primaryBtn inverted" href="https://github.com/cristiancarter"><img style="width: 30%;"
+                            src="assets/github.svg" alt="GitHub Logo" draggable="false">GitHub</a>
+                    <a class="secondaryBtn" href="https://www.linkedin.com/in/cristian-petrila/"><img
+                            style="width: 30%;" src="assets/linkedin.svg" alt="LinkedIn logo" draggable="false">
                         LinkedIn</a>
                 </div>
             </div>
@@ -77,8 +101,11 @@
         </div>
     </section>
 
+
+    <!-- About section -->
+
     <section id="about">
-        <div class="sectionContainer">
+        <div class="aboutSectionContainer">
             <div class="card">
                 <div class="windowBtns">
                     <div class="red"></div>
@@ -100,7 +127,8 @@
                     </p>
                 </div>
                 <div class="btnContainer" style="height: 3.6rem;">
-                    <a class="primaryBtn inverted" onclick="window.open('assets/placeholderResume.pdf')" target="_blank">Download CV</a>
+                    <a class="primaryBtn inverted" onclick="window.open('assets/placeholderResume.pdf')"
+                        target="_blank">Download CV</a>
                 </div>
             </div>
             <div class="techStack">
@@ -125,7 +153,8 @@
                             <p class="subtitle">Technologies</p>
                             <div class="languageIcons">
                                 <img class="languageIcon" src="assets/react.svg" alt="React icon" draggable="false">
-                                <img class="languageIcon" src="assets/tailwind.svg" alt="Tailwind icon" draggable="false">
+                                <img class="languageIcon" src="assets/tailwind.svg" alt="Tailwind icon"
+                                    draggable="false">
                             </div>
                         </div>
                     </div>
@@ -139,69 +168,218 @@
     </section>
 
 
-    <section id="projects">
-        <div class="projectsContainer">
-            <h1 class="title">Projects<span class="typingDots"></span></h1>
-            <div class="sectionContainer">
-                <div id="projectOne" class="projectCard">
-                    <img src="assets/hr.jpg" alt="Project image placeholder of a vectorized HR platform" draggable="false">
-                    <div class="projectInfo">
-                        <h2 class="subtitle">HR Dashboard</h2>
-                        <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
-                        <div class="projectsButtonsContainer">
-                            <button class="tertiaryBtn">View on github</button>
-                            <button class="fourthBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
-                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg></button>
+
+    <!-- Responsive about section -->
+
+    <section class="" id="aboutResponsive">
+        <div class="responsiveContainer">
+            <h1 class="title">About me</h1>
+            <div class="rightContent">
+                <p class="sectionParagraph">
+                <p class="sectionParagraph">👋 Hello! I'm Cristian, a passionate and dedicated Junior Front-End
+                    Developer with a keen eye for design and a
+                    love for coding. My journey into the world of web development started with a curiosity about how
+                    websites work
+                    and quickly grew into a full-fledged passion. I thrive on the challenge of turning complex
+                    problems into simple,
+                    beautiful, and intuitive interfaces.</p>
+                <br>
+                <p class="sectionParagraph secondayFont">Hobbies: Ice hockey, building LEGOs, old literature, gaming
+                </p>
+            </div>
+            <div class="btnContainer" style="height: 3.6rem;">
+                <a class="primaryBtn inverted" onclick="window.open('assets/placeholderResume.pdf')"
+                    target="_blank">Download CV</a>
+            </div>
+            <div class="techStack">
+                <div class="cardCentered">
+                    <h2 class="secondaryTitle">Tech Stack</h2>
+
+                    <div class="responsiveTechStack">
+                        <p>Tech Stack</p>
+                        <div class="responsiveTechStackIcons">
+                            <img class="languageIcon smallIcon" src="assets/html.svg" alt="React icon"
+                                draggable="false">
+                            <img class="languageIcon smallIcon" src="assets/css.svg" alt="React icon" draggable="false">
+                            <img class="languageIcon smallIcon" src="assets/js.svg" alt="React icon" draggable="false">
+                            <img class="languageIcon smallIcon" src="assets/py.svg" alt="React icon" draggable="false">
+                            <img class="languageIcon smallIcon" src="assets/react.svg" alt="React icon"
+                                draggable="false">
+                            <img class="languageIcon smallIcon" src="assets/tailwind.svg" alt="React icon"
+                                draggable="false">
                         </div>
                     </div>
-                </div>
-                <div id="projectOne" class="projectCard">
-                    <img src="assets/plane.jpg" alt="Vectorized image of a plane" draggable="false">
-                    <div class="projectInfo">
-                        <h2 class="subtitle">Project name</h2>
-                        <p>Placeholder for the second project which is still in works... Keep an eye on this.</p>
-                        <div class="projectsButtonsContainer">
-                            <button class="tertiaryBtn">View on github</button>
-                            <button class="fourthBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
-                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg></button>
-                        </div>
-                    </div>
-                </div>
-                <div id="projectOne" class="projectCard">
-                    <img src="assets/calculator.png" alt="Vectorized image of a calculator" draggable="false">
-                    <div class="projectInfo">
-                        <h2 class="subtitle">Project name</h2>
-                        <p>Placeholder for third project which is still in works... Keep an eye on this.</p>
-                        <div class="projectsButtonsContainer">
-                            <button class="tertiaryBtn">View on github</button>
-                            <button class="fourthBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
-                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg></button>
-                        </div>
-                    </div>
+
                 </div>
             </div>
+        </div>
 
-
-
-            <div class="scrollDownMiddle" onclick="location='./#contact'">
-                <p>Next section</p>
-                <img class="arrow" src="assets/scrolldown.svg" alt="Arrow to indicate scrolling down">
-            </div>
     </section>
 
 
+    <!-- Projects Section -->
+
+    <section id="projects">
+
+        <h1 class="title projTitle">Projects: </span></h1>
+
+        <div class="cardContainer">
+
+
+            <div class="cardNew">
+                <img src="assets/calculator.jpg" alt="Card 1" draggable="false">
+                <div class="cardContent">
+                    <h2 class="subTitle">HR Dashboard</h2>
+                    <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
+                </div>
+                <div class="cardBtnContainerNew">
+                    <button class="tertiaryBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></button>
+                    <button class="fourthBtn">View on GitHub</button>
+                </div>
+            </div>
+
+            <div class="cardNew">
+                <img src="assets/hr.jpg" alt="Card 1" draggable="false">
+                <div class="cardContent">
+                    <h2 class="subTitle">HR Dashboard</h2>
+                    <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
+                </div>
+                <div class="cardBtnContainerNew">
+                    <button class="tertiaryBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></button>
+                    <button class="fourthBtn">View on GitHub</button>
+                </div>
+            </div>
+
+            <div class="cardNew">
+                <img src="assets/plane.jpg" alt="Card 1" draggable="false">
+                <div class="cardContent">
+                    <h2 class="subTitle">HR Dashboard</h2>
+                    <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
+                </div>
+                <div class="cardBtnContainerNew">
+                    <button class="tertiaryBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></button>
+                    <button class="fourthBtn">View on GitHub</button>
+                </div>
+            </div>
+            <div class="cardNew">
+                <img src="assets/plane.jpg" alt="Card 1" draggable="false">
+                <div class="cardContent">
+                    <h2 class="subTitle">HR Dashboard</h2>
+                    <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
+                </div>
+                <div class="cardBtnContainerNew">
+                    <button class="tertiaryBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></button>
+                    <button class="fourthBtn">View on GitHub</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="scrollDownMiddle" onclick="location='./#contact'">
+            <p>Next section</p>
+            <img class="arrow" src="assets/scrolldown.svg" alt="Arrow to indicate scrolling down">
+        </div>
+    </section>
+
+
+    <!-- Responsive Projects section -->
+
+    <section id="projectsResponsive">
+        <h1 class="title">Projects</h1>
+        <div class="responsiveCardContainer">
+            <div class="cardNew">
+                <img src="assets/calculator.jpg" alt="Card 1" draggable="false">
+                <div class="cardContent">
+                    <h2 class="subTitle">HR Dashboard</h2>
+                    <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
+                </div>
+                <div class="cardBtnContainerNew">
+                    <button class="tertiaryBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></button>
+                    <button class="fourthBtn">View on GitHub</button>
+                </div>
+            </div>
+
+
+            <div class="cardNew">
+                <img src="assets/hr.jpg" alt="Card 1" draggable="false">
+                <div class="cardContent">
+                    <h2 class="subTitle">HR Dashboard</h2>
+                    <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
+                </div>
+                <div class="cardBtnContainerNew">
+                    <button class="tertiaryBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></button>
+                    <button class="fourthBtn">View on GitHub</button>
+                </div>
+            </div>
+
+
+            <div class="cardNew">
+                <img src="assets/plane.jpg" alt="Card 1" draggable="false">
+                <div class="cardContent">
+                    <h2 class="subTitle">HR Dashboard</h2>
+                    <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
+                </div>
+                <div class="cardBtnContainerNew">
+                    <button class="tertiaryBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></button>
+                    <button class="fourthBtn">View on GitHub</button>
+                </div>
+            </div>
+
+
+            <div class="cardNew">
+                <img src="assets/calculator.jpg" alt="Card 1" draggable="false">
+                <div class="cardContent">
+                    <h2 class="subTitle">HR Dashboard</h2>
+                    <p>Placeholder for the first project which is still in works... Keep an eye on this.</p>
+                </div>
+                <div class="cardBtnContainerNew">
+                    <button class="tertiaryBtn">Live demo <svg class="arrow-icon" width="20" height="auto"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></button>
+                    <button class="fourthBtn">View on GitHub</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Contact section -->
 
     <section id="contact">
         <div class="sectionContainer">
@@ -236,15 +414,21 @@
 
     </section>
 
+    <!-- Footer section -->
 
     <footer>
         <footer>
             <nav>
                 <div class="navLinksContainer">
                     <ul class="navLinks">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a id="aboutNavBtn" href="#about">About</a></li>
+                        <li><a id="aboutNavBtn" href="#projects">Projects</a></li>
+                        <li><a id="aboutNavBtn" href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="responsiveNavLinks">
+                        <li><a id="aboutNavBtn" href="#aboutResponsive">About</a></li>
+                        <li><a id="aboutNavBtn" href="#projectsResponsive">Projects</a></li>
+                        <li><a id="aboutNavBtn" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>

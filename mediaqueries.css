@@ -1,5 +1,4 @@
-
-
+/* General media query for different breakpoints */
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
@@ -10,8 +9,11 @@
     }
 }
 
-
-/* HAMBURGER MENU */
+@media screen and (max-width: 1349px) {
+    .scrollDownMiddle {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     #desktopNav {
@@ -19,11 +21,200 @@
     }
     #hamburgerNav {
         display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 10;
     }
-    .scrollDown {
+    .scrollDown,
+    .scrollDownMiddle {
         display: none;
     }
-    .section {
-        position: static;
+    #projects {
+        height: fit-content;
+        padding-bottom: 5rem;
+        overflow: auto;
+    }
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        word-wrap: break-word;
     }
 }
+
+@media screen and (max-width: 1160px) {
+    section {
+        display: block;
+        position: static;
+        height: 80vh;
+        padding-top: 2rem;
+    }
+    #hero .sectionContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10rem;
+    }
+    #hero .leftContent img {
+        width: 10rem;
+        border-width: 3px;
+        border-color: rgba(31, 248, 31, 0.343);
+        position: relative;
+        bottom: 8rem;
+        left: 19.9rem;
+    }
+    #hero {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 1120px) {
+    #about {
+        height: max-content;
+        padding-bottom: 70%;
+    }
+    .aboutSectionContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #hero .leftContent img {
+        display: none;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .sectionParagraph {
+        font-size: 14px;
+    }
+    #aboutmobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    #about, #projects {
+        display: none;
+    }
+    #aboutResponsive, #projectsResponsive {
+        display: block;
+    }
+    .responsiveNavLinks {
+        display: flex;
+    }
+    .navLinks {
+        display: none;
+    }
+    #hamburgerNav {
+        display: none;
+    }
+    #hamburgerNavResponsive {
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    #aboutResponsive {
+        height: fit-content;
+        padding-bottom: 10rem;
+    }
+    .smallIcon {
+        width: 3rem;
+    }
+    .responsiveTechStack {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .responsiveTechStack p {
+        border-bottom: 5px solid rgba(255, 255, 255, 0.231);
+        padding-bottom: 1rem;
+    }
+    .responsiveTechStackIcons {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #projectsResponsive {
+        height: fit-content;
+        text-align: center;
+    }
+    .responsiveCardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectCard {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectCard img {
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.5rem;
+    }
+    .projectInfo {
+        text-align: center;
+    }
+    .projectsButtonsContainer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .responsiveCardContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #aboutResponsive {
+        display: block;
+        width: 100%; 
+        padding-bottom: 10rem;
+        margin: 0 auto;  
+    }
+    .responsiveContainer {
+        width: 100%;  
+        max-width: 100%;  
+        margin: 0 auto;  
+        padding: 0 1rem; 
+    }
+    .responsiveContainer .rightContent {
+        width: 100%;  
+        max-width: 100%;  
+        text-align: left;  
+    }
+    .responsiveContainer .btnContainer {
+        width: 100%; 
+        text-align: center;  
+    }
+    .responsiveTechStack {
+        width: 100%;  
+    }
+    .responsiveTechStackIcons {
+        width: 100%;  
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: center;
+        align-items: center;  
+    }
+}
+
+
+
