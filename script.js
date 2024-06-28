@@ -4,7 +4,7 @@ function toggleMenu() {
     menu.classList.toggle("open")
     icon.classList.toggle("open")
 };
-function toggleMenu() {
+function toggleResponsiveMenu() {
     const menu = document.querySelector(".mlResponsive");
     const icon = document.querySelector(".hiResponsive");
     menu.classList.toggle("open")
@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 document.addEventListener("DOMContentLoaded", function() {
-    const navbar = document.getElementById("hamburgerNavResponsive");
+    const navbarResponsive = document.getElementById("hamburgerNavResponsive");
     window.addEventListener("scroll", function() {
         if (window.scrollY > 130) {
-            navbar.classList.add("scrolled");
+            navbarResponsive.classList.add("scrolled");
         } else {
-            navbar.classList.remove("scrolled");
+            navbarResponsive.classList.remove("scrolled");
         }
     });
 });

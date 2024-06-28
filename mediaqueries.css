@@ -93,9 +93,6 @@
     .sectionParagraph {
         font-size: 14px;
     }
-    #aboutmobile {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 790px) {
