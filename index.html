@@ -2,395 +2,155 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristian Petrila | Full-stack Developer</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script> 
-    <!-- ^^ Script for typewriter effect -->
 </head>
 
 <body>
-
-
-    <!-- Navigation bar -->
-
-    <nav id="desktopNav">
+    <nav id="mainNav">
         <div class="logo" onclick="location='./#'">CP</div>
-        <div>
-            <ul class="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <ul class="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
-
-
-    <!-- Responsive Navigation Bar -->
-
-    <nav id="hamburgerNav">
-        <div class="logo" onclick="location='./#'"">CP</div>
-      <div class=" hamburgerMenu">
-            <div class="hamburgerIcon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menuLinks">
-                <li><a id="aboutNavBtn" href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a id="projectsNavBtn" href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a id="contactNavBtn" href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-
-        </div>
-    </nav>
-
-    <nav id="hamburgerNavResponsive">
-        <div class="logo" onclick="location='./#'"">CP</div>
-      <div class=" hamburgerMenu">
-            <div class="hamburgerIcon hiResponsive" onclick="toggleResponsiveMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menuLinks mlResponsive">
-                <li><a id="aboutNavBtn" href="#aboutResponsive" onclick="toggleMenu()">About</a></li>
-                <li><a id="projectsNavBtn" href="#projectsResponsive" onclick="toggleMenu()">Projects</a></li>
-                <li><a id="contactNavBtn" href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-
-        </div>
-    </nav>
-
-
-    <!-- Hero section -->
-
 
     <section id="hero">
-        <div class="sectionContainer">
-            <div class="leftContent">
-                <img src="assets/cp.jpeg" draggable="false" alt="Headshot of Cristian Petrila in black and white">
-            </div>
-            <div class="card">
-                <div class="windowBtns">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <div class="rightContent">
-                    <p>Hello world, my name is</p>
-                    <h1 class="title">Cristian Petrila, <br>I <span class="typewriter"></span>💻</h1>
-                    <p class="sectionParagraph">Full-stack developer transfering ideas into feasible code.</p>
-                </div>
-                <div class="btnContainer">
-                    <a class="primaryBtn inverted" href="https://github.com/cristiancarter"><img style="width: 30%;"
-                            src="assets/github.svg" alt="GitHub Logo" draggable="false">GitHub</a>
-                    <a class="secondaryBtn" href="https://www.linkedin.com/in/cristian-petrila/"><img
-                            style="width: 30%;" src="assets/linkedin.svg" alt="LinkedIn logo" draggable="false">
-                        LinkedIn</a>
+        <div class="hero-content">
+            <img src="assets/cp.jpeg" alt="Cristian Petrila" class="profile-img">
+            <div class="hero-text">
+                <h1>Cristian Petrila</h1>
+                <h2>Full-stack Developer</h2>
+                <p>Transforming ideas into elegant, efficient code.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
                 </div>
             </div>
-        </div>
-        <div class="scrollDown" onclick="location='./#about'">
-            <p>Next section</p>
-            <img class="arrow" src="assets/scrolldown.svg" alt="Arrow icon to indicate scrolling down">
         </div>
     </section>
-
-
-    <!-- About section -->
 
     <section id="about">
-        <div class="aboutSectionContainer">
-            <div class="card">
-                <div class="windowBtns">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <div class="rightContent">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hello! I'm Cristian, a passionate and dedicated Junior Full-Stack Developer with a keen eye for design
+                and a love for coding. My journey into the world of web development started with curiosity and quickly
+                grew into a full-fledged passion.</p>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li data-icon="fa-brands fa-html5,fa-brands fa-css3-alt">HTML5 & CSS3</li>
+                    <li data-icon="fa-brands fa-js">JavaScript</li>
+                    <li data-icon="fa-brands fa-react">React</li>
+                    <li data-icon="fa-brands fa-node-js">Node.js</li>
+                    <li data-icon="fa-brands fa-python">Python</li>
+                    <li data-icon="fa-brands fa-git-alt">Git</li>
 
-                    <h1 class="title">About me <span class="typingDots"></span></h1>
-                    <p class="sectionParagraph">👋 Hello! I'm Cristian, a passionate and dedicated Junior Front-End
-                        Developer with a keen eye for design and a
-                        love for coding. My journey into the world of web development started with a curiosity about how
-                        websites work
-                        and quickly grew into a full-fledged passion. I thrive on the challenge of turning complex
-                        problems into simple,
-                        beautiful, and intuitive interfaces.</p>
-                    <br>
-                    <p class="sectionParagraph secondayFont">Hobbies: Ice hockey, building LEGOs, old literature, gaming
-                    </p>
-                </div>
-                <div class="btnContainer" style="height: 3.6rem;">
-                    <a class="primaryBtn inverted" onclick="window.open('assets/placeholderResume.pdf')"
-                        target="_blank">Download CV</a>
-                </div>
+                </ul>
             </div>
-            <div class="techStack">
-                <div class="cardCentered">
-                    <h2 class="secondaryTitle">Tech Stack</h2>
-                    <div class="techStackContainer">
-                        <div class="languageContainer">
-                            <p class="subtitle">Web Languages</p>
-                            <div class="languageIcons">
-                                <img class="languageIcon" src="assets/html.svg" alt="HTML icon" draggable="false">
-                                <img class="languageIcon" src="assets/css.svg" alt="CSS icon" draggable="false">
-                            </div>
-                        </div>
-                        <div class="languageContainer">
-                            <p class="subtitle">Programming Languages</p>
-                            <div class="languageIcons">
-                                <img class="languageIcon" src="assets/js.svg" alt="JavaScript icon" draggable="false">
-                                <img class="languageIcon" src="assets/py.svg" alt="Python icon" draggable="false">
-                            </div>
-                        </div>
-                        <div class="languageContainer">
-                            <p class="subtitle">Technologies</p>
-                            <div class="languageIcons">
-                                <img class="languageIcon" src="assets/react.svg" alt="React icon" draggable="false">
-                                <img class="languageIcon" src="assets/tailwind.svg" alt="Tailwind icon"
-                                    draggable="false">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="hobbies">
+                <h3>Hobbies</h3>
+                <p>Ice hockey, building LEGOs, old literature, gaming</p>
             </div>
-        </div>
-        <div class="scrollDown" onclick="location='./#projects'">
-            <p>Next section</p>
-            <img class="arrow" src="assets/scrolldown.svg" alt="Arrow icon to indicate scrolling down">
         </div>
     </section>
-
-
-
-    <!-- Responsive about section -->
-
-    <section class="" id="aboutResponsive">
-        <div class="responsiveContainer">
-            <h1 class="title">About me</h1>
-            <div class="rightContent">
-                <p class="sectionParagraph">
-                <p class="sectionParagraph">👋 Hello! I'm Cristian, a passionate and dedicated Junior Front-End
-                    Developer with a keen eye for design and a
-                    love for coding. My journey into the world of web development started with a curiosity about how
-                    websites work
-                    and quickly grew into a full-fledged passion. I thrive on the challenge of turning complex
-                    problems into simple,
-                    beautiful, and intuitive interfaces.</p>
-                <br>
-                <p class="sectionParagraph secondayFont">Hobbies: Ice hockey, building LEGOs, old literature, gaming
-                </p>
-            </div>
-            <div class="btnContainer" style="height: 3.6rem;">
-                <a class="primaryBtn inverted" onclick="window.open('assets/placeholderResume.pdf')"
-                    target="_blank">Download CV</a>
-            </div>
-            <div class="techStack">
-                <div class="cardCentered">
-                    <h2 class="secondaryTitle">Tech Stack</h2>
-
-                    <div class="responsiveTechStack">
-                        <p>Tech Stack</p>
-                        <div class="responsiveTechStackIcons">
-                            <img class="languageIcon smallIcon" src="assets/html.svg" alt="React icon"
-                                draggable="false">
-                            <img class="languageIcon smallIcon" src="assets/css.svg" alt="React icon" draggable="false">
-                            <img class="languageIcon smallIcon" src="assets/js.svg" alt="React icon" draggable="false">
-                            <img class="languageIcon smallIcon" src="assets/py.svg" alt="React icon" draggable="false">
-                            <img class="languageIcon smallIcon" src="assets/react.svg" alt="React icon"
-                                draggable="false">
-                            <img class="languageIcon smallIcon" src="assets/tailwind.svg" alt="React icon"
-                                draggable="false">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- Projects Section -->
 
     <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <div class="projects-grid">
 
-        <h1 class="title projTitle">Projects: </span></h1>
-
-        <div class="cardContainer">
-
-
-            <div class="cardNew">
-                <img src="assets/mindoProjectCover.jpg" alt="Card 1" draggable="false">
-                <div class="cardContent">
-                    <h2 class="subTitle">MinimalDo</h2>
-                    <p>Minimal do is a simple to-do list with tags and priority features.</p>
+                <!-- MinDo -->
+                <div class="project-card">
+                    <img src="assets/mindoProjectCover.jpg" alt="MinimalDo">
+                    <div class="project-info">
+                        <h3>MinimalDo</h3>
+                        <p>A simple to-do list with tags and priority features.</p>
+                        <div class="project-links">
+                            <a href="https://cristiancarter.github.io/MinDo/" class="btn primary-btn"
+                                target="_blank">Live Demo</a>
+                            <a href="https://github.com/cristiancarter/MinDo" class="btn secondary-btn"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="cardBtnContainerNew">
-                    <button class="tertiaryBtn" onclick="window.open('https://cristiancarter.github.io/MinDo/')">Live demo <svg class="arrow-icon" width="20" height="auto"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></button>
-                    <button class="fourthBtn" onclick="window.open('https://github.com/cristiancarter/MinDo')">View on GitHub</button>
+
+                <!-- LockForge 2 -->
+                <div class="project-card">
+                    <img src="assets/LockForgeProjectCover.jpg" alt="LockForge">
+                    <div class="project-info">
+                        <h3>LockForge</h3>
+                        <p>A random password generator with customizable character count.</p>
+                        <div class="project-links">
+                            <a href="https://cristiancarter.github.io/LockForge/" class="btn primary-btn"
+                                target="_blank">Live Demo</a>
+                            <a href="https://github.com/cristiancarter/LockForge" class="btn secondary-btn"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- SwiftTip -->
+                <div class="project-card">
+                    <img src="assets/SwiftTipProjectCover.jpg" alt="SwiftTip">
+                    <div class="project-info">
+                        <h3>SwiftTip</h3>
+                        <p>Tipping calculator. Which is weird, since we don't tip in the UK.</p>
+                        <div class="project-links">
+                            <a href="https://cristiancarter.github.io/SwiftTip/" class="btn primary-btn"
+                                target="_blank">Live Demo</a>
+                            <a href="https://github.com/cristiancarter/SwiftTip" class="btn secondary-btn"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-
-
-            <div class="cardNew">
-                <img src="assets/LockForgeProjectCover.jpg" alt="Card 1" draggable="false">
-                <div class="cardContent">
-                    <h2 class="subTitle">LockForge</h2>
-                    <p>LockForge is a random password generator that lets you choose the number of characters.</p>
-                </div>
-                <div class="cardBtnContainerNew">
-                    <button class="tertiaryBtn" onclick="window.open('https://cristiancarter.github.io/LockForge/')">Live demo <svg class="arrow-icon" width="20" height="auto"
-                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></button>
-                <button class="fourthBtn" onclick="window.open('https://github.com/cristiancarter/LockForge')">View on GitHub</button>
-                </div>
-            </div>
-
-
-            <div class="cardNew">
-                <img src="assets/SwiftTipProjectCover.jpg" alt="Card 1" draggable="false">
-                <div class="cardContent">
-                    <h2 class="subTitle">SwiftTip</h2>
-                    <p>SwiftTip is a tip calculator that lets you use preset or custom percentages to calculate your tip.</p>
-                </div>
-                <div class="cardBtnContainerNew">
-                    <button class="tertiaryBtn" onclick="window.open('https://cristiancarter.github.io/SwiftTip/')">Live demo <svg class="arrow-icon" width="20" height="auto"
-                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></button>
-                <button class="fourthBtn" onclick="window.open('https://github.com/cristiancarter/SwiftTip')">View on GitHub</button>
-                </div>
-            </div>
-
-           
-
-
-
-
-        </div>
-
-
-
-        <!-- <div class="scrollDownMiddle" onclick="location='./#contact'">
-            <p>Next section</p>
-            <img class="arrow" src="assets/scrolldown.svg" alt="Arrow to indicate scrolling down">
-        </div> -->
-     </section> 
-
-
-    <!-- Responsive Projects section -->
-
-    <section id="projectsResponsive">
-        <h1 class="title">Projects</h1>
-        <div class="responsiveCardContainer">
-
-            <div class="cardNew">
-                <img src="assets/mindoProjectCover.jpg" alt="Card 1" draggable="false">
-                <div class="cardContent">
-                    <h2 class="subTitle">MinimalDo</h2>
-                    <p>Minimal do is a simple to-do list with tags and priority features.</p>
-                </div>
-                <div class="cardBtnContainerNew">
-                    <button class="tertiaryBtn" onclick="window.open('https://cristiancarter.github.io/MinDo/')">Live demo <svg class="arrow-icon" width="20" height="auto"
-                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></button>
-                    <button class="fourthBtn" onclick="window.open('https://github.com/cristiancarter/MinDo')">View on GitHub</button>
-                </div>
-            </div>
-
-
-            <div class="cardNew">
-                <img src="assets/LockForgeProjectCover.jpg" alt="Card 1" draggable="false">
-                <div class="cardContent">
-                    <h2 class="subTitle">LockForge</h2>
-                    <p>LockForge is a random password generator that lets you choose the number of characters.</p>
-                </div>
-                <div class="cardBtnContainerNew">
-                    <button class="tertiaryBtn" onclick="window.open('https://cristiancarter.github.io/LockForge/')">Live demo <svg class="arrow-icon" width="20" height="auto"
-                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></button>
-                <button class="fourthBtn" onclick="window.open('https://github.com/cristiancarter/LockForge')">View on GitHub</button>
-                </div>
-            </div>
-
-
-            <div class="cardNew">
-                <img src="assets/SwiftTipProjectCover.jpg" alt="Card 1" draggable="false">
-                <div class="cardContent">
-                    <h2 class="subTitle">SwiftTip</h2>
-                    <p>SwiftTip is a tip calculator that lets you use preset or custom percentages to calculate your tip.</p>
-                </div>
-                <div class="cardBtnContainerNew">
-                    <button class="tertiaryBtn" onclick="window.open('https://cristiancarter.github.io/SwiftTip/')">Live demo <svg class="arrow-icon" width="20" height="auto"
-                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg></button>
-                <button class="fourthBtn" onclick="window.open('https://github.com/cristiancarter/SwiftTip')">View on GitHub</button>
-                </div>
-            </div>
-
-
-
         </div>
     </section>
-
-    <!-- Contact section -->
 
     <section id="contact">
-        <div class="sectionContainer">
-            <div class="cardWide">
-                <div class="windowBtns">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <div class="rightContent">
-
-                    <h1 class="title">Contact me<span class="typingDots"></span> </h1>
-
-                    <hr class="divider">
-
-                    <div class="projectsButtonsContainer">
-                        <!-- Calendly link widget begin -->
-                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
-                            async></script>
-                        <a class="tertiaryBtn" href=""
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cristianpetrila-e7ps/30min'});return false;">Schedule
-                            time with me</a>
-                        <!-- Calendly link widget end -->
-
-                        <a class="fourthBtn"
-                            href="mailto:cristianpetrila@outlook.com?subject=Let's work together!">cristianpetrila@outlook.com</a>
+        <div class="section-content">
+            <h2>Get in Touch</h2>
+            <div id="form-message" class="form-message"></div>
+            <div class="contact-content">
+                <form id="contact-form" action="https://your-server-url.com/send-email" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p>Email: cristianpetrila@outlook.com</p>
+                    <p>Location: London, United Kingdom</p>
+                    <div class="social-links">
+                        <a href="https://github.com/cristiancarter" target="_blank"><img class="inverted"
+                                src="assets/github.svg" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/cristian-petrila/" target="_blank"><img
+                                src="assets/linkedin.svg" alt="LinkedIn"></a>
                     </div>
-
                 </div>
             </div>
-
+        </div>
     </section>
 
-    <!-- Footer section -->
-
     <footer>
-        <footer>
-            <nav>
-                <div class="navLinksContainer">
-                    <ul class="navLinks">
-                        <li><a id="aboutNavBtn" href="#about">About</a></li>
-                        <li><a id="aboutNavBtn" href="#projects">Projects</a></li>
-                        <li><a id="aboutNavBtn" href="#contact">Contact</a></li>
-                    </ul>
-                    <ul class="responsiveNavLinks">
-                        <li><a id="aboutNavBtn" href="#aboutResponsive">About</a></li>
-                        <li><a id="aboutNavBtn" href="#projectsResponsive">Projects</a></li>
-                        <li><a id="aboutNavBtn" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <p>Copyright &#169; 2024 Cristian Petrila. All Rights Reserved.</p>
-        </footer>
+        <p>© 2024 Cristian Petrila. All rights reserved.</p>
     </footer>
+
 
 </body>
 
