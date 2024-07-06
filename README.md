@@ -12,4 +12,4 @@ This repository contains the code for my personal portfolio website. It showcase
 
 ## Current Version
 
-**Version 2.0**
+**Version 3.0**
